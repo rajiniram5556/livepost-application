@@ -25,5 +25,7 @@ step4:adding menu bar
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 step5:changing the menu bar item names
-step6:
+step6:modifying post list component to display the list of post
+before this we have to compete individual post component
+
       
