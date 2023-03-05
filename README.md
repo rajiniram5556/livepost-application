@@ -28,4 +28,15 @@ step5:changing the menu bar item names
 step6:modifying post list component to display the list of post
 before this we have to compete individual post component
 step7:improve post component
+note:while we want to fine tune the post component it is occpying the entire page like app-root component if we want occupy some less space tan app component menent 
+
+here we are giving some space for post-list component right there it seld we write this code
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <app-post-list></app-post-list>
+    </div>
+  </div>
+</div>
       
