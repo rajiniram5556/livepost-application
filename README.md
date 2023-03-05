@@ -25,4 +25,5 @@ step4:adding menu bar
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 step5:changing the menu bar item names
+step6:
       
