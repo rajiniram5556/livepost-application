@@ -27,5 +27,5 @@ step4:adding menu bar
 step5:changing the menu bar item names
 step6:modifying post list component to display the list of post
 before this we have to compete individual post component
-
+step7:improve post component
       
