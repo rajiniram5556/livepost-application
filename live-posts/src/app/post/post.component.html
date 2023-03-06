@@ -1,12 +1,9 @@
-<h2>Nature</h2>
+<h2>{{post?.title}}</h2>
 <p>
-  Preserve and cherish the pale blue dot, it's the only home we've ever known."
-  “The richness I achieve comes from Nature, the source of my inspiration.”
-  “Tranquility, serenity, and beauty of nature taught me how to find happiness
-  in life and in the silence of eternity.” “Storms make trees take deeper roots.
+  {{post?.description}}
 </p>
-<img src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/07/23090714/nature-1024x682.jpeg" class="img-responsive">
-<p>Author:test@test.com</p>
-<p>Date: 1 Jan 2021 </p>
+<img src="{{post?.imagePath}}" class="img-responsive"/>
+<p>Author:{{post?.author}}</p>
+<p>Date: {{post?.datetimeCreated}} </p>
 <button>Edit</button> | <button>Delete</button>
 <hr>
