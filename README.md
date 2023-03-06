@@ -46,5 +46,6 @@ step9:
 
 step10:routing
 step11:connecting component with the service
+step12:designing a form
 
       
