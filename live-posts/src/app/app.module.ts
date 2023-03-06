@@ -9,6 +9,7 @@ import { PostComponent } from './post/post.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
 import { AuthComponent } from './auth/auth.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes:Routes=[
   {
@@ -45,7 +46,8 @@ const routes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

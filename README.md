@@ -46,6 +46,8 @@ step9:
 
 step10:routing
 step11:connecting component with the service
-step12:designing a form
+step12:designing a form for post
+step13:how we can save the post data 
+how to connect html form to the ts file
 
       
