@@ -1,5 +1,7 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
 import { Post } from '../post.model';
+import { PostSerivce } from '../post.service';
 
 @Component({
   selector: 'app-post',
@@ -8,13 +10,20 @@ import { Post } from '../post.model';
 })
 export class PostComponent implements OnInit {
   @Input() post?:Post;
+  @Input() Index: number=0;
 
-  constructor() { 
+  constructor(private postService:PostSerivce) { 
     
   }
 
   ngOnInit(): void {
     console.log(this.post);
+    console.log(this.Index);
+  
+  }
+  onDelete(){
+    this.postService.deletePost(this.Index);
+    
   }
 
 }

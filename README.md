@@ -40,5 +40,11 @@ here we are giving some space for post-list component right there it seld we wri
   </div>
 </div>
 
-step8:
+step8:create list of objects in the post-list component ts file 
+step9:
+ @Input() post?:Post;
+
+step10:routing
+step11:connecting component with the service
+
       
