@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Post } from '../post.model';
+import { PostSerivce } from '../post.service';
 
 @Component({
   selector: 'app-post-edit',
@@ -9,24 +11,28 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class PostEditComponent implements OnInit {
   form!: FormGroup;
 
-  constructor() {}
+  constructor(private postService: PostSerivce) {}
 
   ngOnInit(): void {
     this.form = new FormGroup({
-      title: new FormControl(null, [
-        Validators.required
-        
-      ]),
-      description: new FormControl(null, [
-        Validators.required
-        
-      ]),
-      imagePath: new FormControl(null, [
-        Validators.required
-      ]),
+      title: new FormControl(null, [Validators.required]),
+      description: new FormControl(null, [Validators.required]),
+      imagePath: new FormControl(null, [Validators.required]),
     });
   }
   onSubmit() {
-    console.log(this.form);
+    const title = this.form.value.title;
+    const description = this.form.value.description;
+    const imagePath = this.form.value.imagePath;
+    //ready with object
+    const post: Post = new Post(
+      title,
+      description,
+      imagePath,
+      'test@test.com',
+      new Date()
+    );
+    // CALLING POST SERVICE
+    this.postService.addPost(post)
   }
 }
