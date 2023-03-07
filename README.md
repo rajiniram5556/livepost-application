@@ -50,5 +50,6 @@ step12:designing a form for post
 step13:how we can save the post data 
 how to connect html form to the ts file
 step14:add new post and using form object send this post to post list page
+step15:when ever we clicked on save button automatically we have to redirect post list page
 
       
