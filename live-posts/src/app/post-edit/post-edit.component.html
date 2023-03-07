@@ -13,6 +13,8 @@
             <div class="form-group">
                 <label>Image Path</label>
                 <input class="form-control" formControlName="imagePath" type="text"/>
+                <br>
+                <img class="img-responsive" src="{{form.value.imagePath}}">
             </div>
             <button class="btn btn-success" type="submit" [disabled]="form.invalid">Save</button> |
             <button class="btn btn-primary" type="reset">Clear</button>

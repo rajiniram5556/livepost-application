@@ -54,4 +54,8 @@ step15:when ever we clicked on save button automatically we have to redirect pos
 
 Note:take the router help in this case
 
+step16:few improvements for the post 
+specially we want to see the preview of the image what we are uploading
+we have to add img tag in the post-edit html
+
       
