@@ -72,6 +72,10 @@ this.route.params.subscribe((params:Params)=>{
     }
 
 step18:
-getting post dqat to edit into post edit component    
+getting post dqat to edit into post edit component 
+
+step19:displaying likes
+need to change our post model file
+
 
       
