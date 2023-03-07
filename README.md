@@ -78,4 +78,8 @@ step19:displaying likes
 need to change our post model file
 
 
-      
+      saving the data in data base:
+
+      step1:saving our data in data base
+
+      create a file under app with the name of back-end.service.ts

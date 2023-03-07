@@ -30,7 +30,7 @@ export class PostSerivce {
         )
       ];
 
-      getPost(){
+      getPosts(){
         return this.listOfPosts;
       }
       deletePost(Index: number){
