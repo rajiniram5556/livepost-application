@@ -43,4 +43,9 @@ export class PostSerivce {
 
       }
 
+      getpost(Index:number){
+        return this.listOfPosts[Index];
+
+      }
+
 }

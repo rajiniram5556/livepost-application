@@ -28,7 +28,7 @@ export class PostComponent implements OnInit {
   }
   onEdit(){
     this.router.navigate(["/post-edit",this.Index])
-    //this.postService.updatePost(this.Index)
+    
   }
 
 }
