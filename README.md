@@ -58,4 +58,17 @@ step16:few improvements for the post
 specially we want to see the preview of the image what we are uploading
 we have to add img tag in the post-edit html
 
+step17:edit a post
+adding a param for route
+note:if we want mention a parameter we can mention like below
+post-edit/:index
+note:to read all parameters we have to use activated route
+private route:ActivatedRoute)
+
+this.route.params.subscribe((params:Params)=>{
+      if(params['index']){
+        console.log(params['index']);
+
+    }
+
       

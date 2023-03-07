@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import { Post } from '../post.model';
 import { PostSerivce } from '../post.service';
 
@@ -12,7 +13,7 @@ export class PostComponent implements OnInit {
   @Input() post?:Post;
   @Input() Index: number=0;
 
-  constructor(private postService:PostSerivce) { 
+  constructor(private postService:PostSerivce,private router:Router) { 
     
   }
 
@@ -24,6 +25,10 @@ export class PostComponent implements OnInit {
   onDelete(){
     this.postService.deletePost(this.Index);
     
+  }
+  onEdit(){
+    this.router.navigate(["/post-edit",this.Index])
+    //this.postService.updatePost(this.Index)
   }
 
 }
