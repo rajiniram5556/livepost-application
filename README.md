@@ -83,3 +83,5 @@ need to change our post model file
       step1:saving our data in data base
 
       create a file under app with the name of back-end.service.ts
+
+      step2:creating a firebase backend:
