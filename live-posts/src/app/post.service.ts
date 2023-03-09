@@ -40,8 +40,7 @@ export class PostSerivce {
       }
       addPost(post:Post){
         this.listOfPosts.push(post);
-        console.log(this.listOfPosts);
-        alert('completed pushing the post into list')
+        
 
       }
 
